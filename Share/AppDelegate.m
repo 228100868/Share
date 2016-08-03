@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "YZViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,9 +17,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //当我们吧 main。storyboard关联 打开app只展示一个 黑色的window 没有控制器 我们需要手动创建一个
+
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [[ YZViewController alloc]init];
+    [self.window makeKeyAndVisible];
+    //一般情况下，为了防止 appdelegate 方法里面需要添加的东西过多 显得程序混乱 我们都会将不同的模块封装起来
+    [self setupRootViewController];
     return YES;
 }
+-(void)setupRootViewController {
 
+}
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

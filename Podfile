@@ -9,4 +9,5 @@ target 'Share' do
 pod 'AFNetworking'
 pod 'MOBFoundation_IDFA'
 pod 'SMSSDK'
+pod 'Masonry'
 end
