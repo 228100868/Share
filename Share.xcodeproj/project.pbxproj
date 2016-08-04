@@ -63,6 +63,9 @@
 		BA02CED51D519F530050D4BC /* UIViewController+MJPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA02CE8F1D519F530050D4BC /* UIViewController+MJPopupViewController.m */; };
 		BA02CED61D519F530050D4BC /* NSMutableString+TagReplace.m in Sources */ = {isa = PBXBuildFile; fileRef = BA02CE921D519F530050D4BC /* NSMutableString+TagReplace.m */; };
 		BA02CED71D519F530050D4BC /* NSString+WPAttributedMarkup.m in Sources */ = {isa = PBXBuildFile; fileRef = BA02CE941D519F530050D4BC /* NSString+WPAttributedMarkup.m */; };
+		BA02CEDD1D51C1EC0050D4BC /* YZForgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA02CEDC1D51C1EC0050D4BC /* YZForgetViewController.m */; };
+		BA02CEE01D51C4C00050D4BC /* YZRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA02CEDF1D51C4C00050D4BC /* YZRegisterViewController.m */; };
+		BA02CEE61D51EAD00050D4BC /* QFCodeShareInit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA02CEE41D51EAD00050D4BC /* QFCodeShareInit.m */; };
 		BA3F9D3D1D5083ED00DAE77E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3F9D3C1D5083ED00DAE77E /* main.m */; };
 		BA3F9D401D5083ED00DAE77E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3F9D3F1D5083ED00DAE77E /* AppDelegate.m */; };
 		BA3F9D431D5083ED00DAE77E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3F9D421D5083ED00DAE77E /* ViewController.m */; };
@@ -193,6 +196,15 @@
 		BA02CE921D519F530050D4BC /* NSMutableString+TagReplace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+TagReplace.m"; sourceTree = "<group>"; };
 		BA02CE931D519F530050D4BC /* NSString+WPAttributedMarkup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WPAttributedMarkup.h"; sourceTree = "<group>"; };
 		BA02CE941D519F530050D4BC /* NSString+WPAttributedMarkup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WPAttributedMarkup.m"; sourceTree = "<group>"; };
+		BA02CEDB1D51C1EC0050D4BC /* YZForgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZForgetViewController.h; sourceTree = "<group>"; };
+		BA02CEDC1D51C1EC0050D4BC /* YZForgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZForgetViewController.m; sourceTree = "<group>"; };
+		BA02CEDE1D51C4C00050D4BC /* YZRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZRegisterViewController.h; sourceTree = "<group>"; };
+		BA02CEDF1D51C4C00050D4BC /* YZRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZRegisterViewController.m; sourceTree = "<group>"; };
+		BA02CEE21D51EAD00050D4BC /* LxDBAnything.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LxDBAnything.h; sourceTree = "<group>"; };
+		BA02CEE31D51EAD00050D4BC /* QFCodeShareInit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFCodeShareInit.h; sourceTree = "<group>"; };
+		BA02CEE41D51EAD00050D4BC /* QFCodeShareInit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFCodeShareInit.m; sourceTree = "<group>"; };
+		BA02CEE51D51EAD00050D4BC /* QFCommonSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFCommonSetting.h; sourceTree = "<group>"; };
+		BA02CEE71D51EADF0050D4BC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		BA3F9D381D5083ED00DAE77E /* Share.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Share.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA3F9D3C1D5083ED00DAE77E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BA3F9D3E1D5083ED00DAE77E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -492,6 +504,17 @@
 			path = WPAttributedMarkup;
 			sourceTree = "<group>";
 		};
+		BA02CEE11D51EAD00050D4BC /* CommonSetting */ = {
+			isa = PBXGroup;
+			children = (
+				BA02CEE21D51EAD00050D4BC /* LxDBAnything.h */,
+				BA02CEE31D51EAD00050D4BC /* QFCodeShareInit.h */,
+				BA02CEE41D51EAD00050D4BC /* QFCodeShareInit.m */,
+				BA02CEE51D51EAD00050D4BC /* QFCommonSetting.h */,
+			);
+			path = CommonSetting;
+			sourceTree = "<group>";
+		};
 		BA3F9D2F1D5083ED00DAE77E = {
 			isa = PBXGroup;
 			children = (
@@ -513,6 +536,7 @@
 		BA3F9D3A1D5083ED00DAE77E /* Share */ = {
 			isa = PBXGroup;
 			children = (
+				BA02CEE11D51EAD00050D4BC /* CommonSetting */,
 				BA02CDFC1D519F530050D4BC /* Addition */,
 				BA656A611D51874C00DA1C3D /* Model */,
 				BA656A571D517FA800DA1C3D /* ViewController */,
@@ -534,6 +558,7 @@
 				BA3F9D491D5083ED00DAE77E /* LaunchScreen.storyboard */,
 				BA3F9D4C1D5083ED00DAE77E /* Info.plist */,
 				BA3F9D3C1D5083ED00DAE77E /* main.m */,
+				BA02CEE71D51EADF0050D4BC /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -547,6 +572,10 @@
 				BA656A5F1D5185F000DA1C3D /* MainViewController.m */,
 				BA656A651D5188C000DA1C3D /* LoginViewController.h */,
 				BA656A661D5188C000DA1C3D /* LoginViewController.m */,
+				BA02CEDE1D51C4C00050D4BC /* YZRegisterViewController.h */,
+				BA02CEDF1D51C4C00050D4BC /* YZRegisterViewController.m */,
+				BA02CEDB1D51C1EC0050D4BC /* YZForgetViewController.h */,
+				BA02CEDC1D51C1EC0050D4BC /* YZForgetViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -700,6 +729,7 @@
 				BA02CED51D519F530050D4BC /* UIViewController+MJPopupViewController.m in Sources */,
 				BA02CE9B1D519F530050D4BC /* NSDictionary+SafeAccess.m in Sources */,
 				BA02CEBB1D519F530050D4BC /* UIImage+Tint.m in Sources */,
+				BA02CEE01D51C4C00050D4BC /* YZRegisterViewController.m in Sources */,
 				BA02CEAC1D519F530050D4BC /* UIApplication+ApplicationSize.m in Sources */,
 				BA02CEA71D519F530050D4BC /* NSString+Trims.m in Sources */,
 				BA02CEB61D519F530050D4BC /* UIImage+Color.m in Sources */,
@@ -745,11 +775,13 @@
 				BA02CED61D519F530050D4BC /* NSMutableString+TagReplace.m in Sources */,
 				BA02CEA31D519F530050D4BC /* NSString+JsonValue.m in Sources */,
 				BA02CEA41D519F530050D4BC /* NSString+MD5.m in Sources */,
+				BA02CEDD1D51C1EC0050D4BC /* YZForgetViewController.m in Sources */,
 				BA02CEA51D519F530050D4BC /* NSString+RegexCategory.m in Sources */,
 				BA02CEA11D519F530050D4BC /* NSObject+Property.m in Sources */,
 				BA02CEC51D519F530050D4BC /* UINavigationItem+Lock.m in Sources */,
 				BA02CE9E1D519F530050D4BC /* NSObject+AutoCoding.m in Sources */,
 				BA3F9D401D5083ED00DAE77E /* AppDelegate.m in Sources */,
+				BA02CEE61D51EAD00050D4BC /* QFCodeShareInit.m in Sources */,
 				BA3F9D3D1D5083ED00DAE77E /* main.m in Sources */,
 				BA02CE951D519F530050D4BC /* NSDate+Formatter.m in Sources */,
 				BA02CEC31D519F530050D4BC /* UINavigationController+JZExtension.m in Sources */,
@@ -868,10 +900,12 @@
 			baseConfigurationReference = 6B68227C4D756D35DA1750C8 /* Pods-Share.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Share/PrefixHeader.pch";
 				INFOPLIST_FILE = Share/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hejiamu.Share;
+				PRODUCT_BUNDLE_IDENTIFIER = com.1000phone.CodeShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)";
 			};
 			name = Debug;
 		};
@@ -880,10 +914,12 @@
 			baseConfigurationReference = 4BA338CE5AF076FAE03A8DF0 /* Pods-Share.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Share/PrefixHeader.pch";
 				INFOPLIST_FILE = Share/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hejiamu.Share;
+				PRODUCT_BUNDLE_IDENTIFIER = com.1000phone.CodeShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)";
 			};
 			name = Release;
 		};

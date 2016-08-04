@@ -9,7 +9,9 @@
 #import "LoginViewController.h"
 #import "Masonry/Masonry.h"
 #import "UIButton+BackgroundColor.h"
-
+#import "YZForgetViewController.h"
+#import "UIControl+ActionBlocks.h"
+#import "YZRegisterViewController.h"
 @interface LoginViewController ()
 
 @end
@@ -44,14 +46,19 @@
 
     [passwordLeft addSubview:passwordLeftImage];
     [phoneLeft addSubview:phoneLeftImage];
-    [password addSubview:passwordLeft];
+//    [password addSubview:passwordLeft];
     phonetext.leftView = phoneLeft;
     password.leftView = passwordLeft;
     [phoneLeftImage mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(@0);
+        make.width.equalTo(@30);
+        make.height.equalTo(@40);
     }];
     [passwordLeftImage mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(@0);
+        make.width.equalTo(@30);
+        make.height.equalTo(@40);
+
     }];
     phonetext.leftViewMode =   UITextFieldViewModeAlways;
     password.leftViewMode  =   UITextFieldViewModeAlways;
@@ -99,11 +106,22 @@
 //    loginButton
     [loginButton setBackgroundColor:[UIColor greenColor] forState:UIControlStateNormal];
     [loginButton setBackgroundColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
+    loginButton.titleLabel.font = [UIFont systemFontOfSize:24 weight:0.15];
 //    [forgetPass setBackgroundColor:[UIColor greenColor] forState:UIControlStateNormal];
 //    [forgetPass setBackgroundColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
     loginButton.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+//    [forgetPass addTarget:self action:@selector(gotoForget) forControlEvents:UIControlEventTouchUpInside];
+    //我们还可以将按钮的事件与按钮写到一块 便于我们在写界面的时候 方便加入控制事件
+    [forgetPass handleControlEvents:UIControlEventTouchUpInside withBlock:^(id weakSender) {
+        YZForgetViewController *VC = [[YZForgetViewController alloc] init];
 
-
+        [self.navigationController pushViewController:VC animated:YES];
+    }];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"注册" style:UIBarButtonItemStylePlain target:self action:@selector(gotoRegister)];
+}
+-(void)gotoRegister {
+    YZRegisterViewController *VC = [[YZRegisterViewController alloc] init];
+    [self.navigationController pushViewController:VC animated:YES];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

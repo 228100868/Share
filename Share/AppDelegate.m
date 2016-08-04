@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "YZViewController.h"
+#import "SMS_SDK/SMSSDK.h"
 @interface AppDelegate ()
 
 @end
@@ -23,11 +24,11 @@
     self.window.rootViewController = [[ YZViewController alloc]init];
     [self.window makeKeyAndVisible];
     //一般情况下，为了防止 appdelegate 方法里面需要添加的东西过多 显得程序混乱 我们都会将不同的模块封装起来
-    [self setupRootViewController];
+    [self setUpMob];
     return YES;
 }
--(void)setupRootViewController {
-
+-(void)setUpMob {
+    [SMSSDK registerApp:MobApp withSecret:MobSecret];
 }
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

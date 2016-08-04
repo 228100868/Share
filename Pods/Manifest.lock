@@ -16,20 +16,31 @@ PODS:
     - AFNetworking/NSURLSession
   - Masonry (1.0.1)
   - MOBFoundation_IDFA (2.0.7)
+  - ReactiveCocoa (2.0):
+    - ReactiveCocoa/Core (= 2.0)
+    - ReactiveCocoa/no-arc (= 2.0)
+    - ReactiveCocoa/RACExtensions (= 2.0)
+  - ReactiveCocoa/Core (2.0):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.0)
+  - ReactiveCocoa/RACExtensions (2.0):
+    - ReactiveCocoa/Core
   - SMSSDK (2.0.5)
 
 DEPENDENCIES:
   - AFNetworking
   - Masonry
   - MOBFoundation_IDFA
+  - ReactiveCocoa (= 2.0)
   - SMSSDK
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   MOBFoundation_IDFA: 965c0c4ae890a9732eb3e0261e26b078df9f7c63
+  ReactiveCocoa: c5347d7b1c348d22a85800e14e89da84c5254cfb
   SMSSDK: 85375419fc969dc9398ce9922c5165c1e14ebe23
 
-PODFILE CHECKSUM: 8112edbdc093b11f5415185896be5dcbd9dd48b7
+PODFILE CHECKSUM: 069421330bddbd1fbaebd4e5a558652557301f90
 
 COCOAPODS: 1.0.1

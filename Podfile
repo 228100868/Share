@@ -10,4 +10,5 @@ pod 'AFNetworking'
 pod 'MOBFoundation_IDFA'
 pod 'SMSSDK'
 pod 'Masonry'
+pod 'ReactiveCocoa','2.0'
 end
